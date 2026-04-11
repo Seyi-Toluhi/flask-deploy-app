@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: flask-deploy-app
+    runtime: docker
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true

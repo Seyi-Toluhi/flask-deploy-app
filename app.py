@@ -3,6 +3,7 @@ flask-deploy-demo - small Flask app used for a CI/CD demo.
 Rohit Patil — kept intentionally simple so the focus is automation.
 """
 import logging
+import os
 from flask import Flask, render_template, request, redirect, url_for, flash
 from config import Config
 
@@ -35,4 +36,4 @@ def submit():
     return redirect(url_for("index"))
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8000, debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
