@@ -245,33 +245,7 @@
         font-size: 0.875rem;
       }
       
-      /* Form container for existing functionality */
-      .legacy-form-container {
-        margin-top: 2rem;
-        padding-top: 2rem;
-        border-top: 1px dashed var(--border-color);
-      }
-      
-      .input-group {
-        display: flex;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
-      
-      .form-control {
-        flex: 1;
-        padding: 0.5rem 0.75rem;
-        border: 1px solid var(--border-color);
-        border-radius: var(--radius-md);
-        font-family: inherit;
-        font-size: 0.875rem;
-      }
-      
-      .form-control:focus {
-        outline: none;
-        border-color: var(--accent-color);
-        box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-      }
+
     </style>
   </head>
   <body>
@@ -388,17 +362,6 @@
         </div>
       </div>
 
-      <!-- Legacy Form functionality retained -->
-      <div class="legacy-form-container">
-        <h3 style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 0.5rem;">System Test Actions</h3>
-        <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">Submit a test action to trigger the CI pipeline demo functionality.</p>
-        <form method="post" action="/submit">
-          <div class="input-group">
-            <input class="form-control" name="text" placeholder="Type a short message..." required />
-            <button type="submit" class="btn btn-primary">Send Test</button>
-          </div>
-        </form>
-      </div>
     </main>
   </body>
 </html>
