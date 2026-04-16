@@ -1,9 +1,129 @@
 <!doctype html>
-<html>
-  <head><meta charset="utf-8"/><title>About - flask-deploy-demo</title></head>
-  <body style="margin:40px;">
-    <h2>About</h2>
-    <p>Small demo app to show continuous deployment with GitHub Actions, Docker, and Render.</p>
-    <p><a href="/">Back</a></p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FreelanceHub - About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-color: #f7f9fc;
+        --surface-color: #ffffff;
+        --text-primary: #111827;
+        --text-secondary: #6b7280;
+        --accent-color: #4f46e5;
+        --border-color: #e5e7eb;
+        --radius-lg: 0.75rem;
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .navbar {
+        background-color: var(--surface-color);
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .nav-link {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.875rem;
+        transition: color 0.2s;
+      }
+
+      .nav-link:hover, .nav-link.active {
+        color: var(--accent-color);
+      }
+
+      .dashboard-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+      }
+
+      .card {
+        background: var(--surface-color);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        padding: 2.5rem;
+      }
+
+      h1 {
+        margin: 0 0 1rem 0;
+        font-size: 1.875rem;
+        font-weight: 700;
+      }
+
+      p {
+        color: var(--text-secondary);
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+      }
+
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+
+      .btn-outline:hover {
+        background-color: var(--bg-color);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="/">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        FreelanceHub
+      </a>
+      <div class="nav-links">
+        <a href="/" class="nav-link">Dashboard</a>
+        <a href="/about" class="nav-link active">About</a>
+      </div>
+    </nav>
+
+    <main class="dashboard-container">
+      <div class="card">
+        <h1>About this Project</h1>
+        <p>This application demonstrates a CI/CD pipeline featuring continuous deployment with GitHub Actions, Docker, and Render, wrapped in a modern SaaS interface.</p>
+        <a href="/" class="btn-outline">&larr; Back to Dashboard</a>
+      </div>
+    </main>
   </body>
 </html>
