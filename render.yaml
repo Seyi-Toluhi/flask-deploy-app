@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: flask-deploy-app
+    name: freelancehub
     runtime: docker
     envVars:
       - key: SECRET_KEY
