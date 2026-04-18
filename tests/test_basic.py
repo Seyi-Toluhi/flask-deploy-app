@@ -10,7 +10,7 @@ def test_index():
     assert b"Welcome" in response.data
 
 def test_dashboard_elements():
-    """Verify the redesigned dashboard loads with all key sections."""
+    """Verify the dashboard loads with all key sections."""
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
