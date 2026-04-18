@@ -28,7 +28,6 @@ def submit():
     text = request.form.get("text", "").strip()
     if text:
         msg = f"You typed: {text}"
-
         flash(msg)
         logging.info("User submitted text: %s", text)
     else:
